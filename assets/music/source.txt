@@ -1,0 +1,3 @@
+gameover.mp3 http://www.mariopiano.com/midi-sound-file-game-over-sound.html
+dead.mp3 https://www.zedge.net/ringtone/1569732/
+alles andere SuperTux github-repository

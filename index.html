@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<audio id="audio" src="assets/music/airship_remix.ogg" autoplay loop="true"></audio>
+
+<div class="layoutStart" id="welcome">
+	<h1>Find the box</h1>
+	<p><label>Name: </label><input type="text" id="username" value="Player"/><br><output id="name_err"></output></p>
+	<h2>Highscores</h2>
+	<ol id="highscore">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ol>
+	<noscript>Dieses Spiel benötigt JavaScript. Bitte aktivieren Sie JavaScript.</noscript>
+	<button id="start">Start</button>
+    <button id="help">?</button>
+</div>
+
+<div class="layoutStart" id="helpPage">
+	<h1>Hilfe</h1>
+	<p>"Find the box" ist ein einfaches 3D Jump'n'run-Spiel. Ziel ist es die Box am anderen Ende des Parcours zu erreichen. </p>
+	<h3>Steuerung:</h3>
+	<p>W,A,S,D: Steuerung des Charakters</p>
+	<p>Leertaste: Springen</p>
+    <p>Die <strong>Zielbox</strong> sieht so aus:    <img src="assets/textures/box0.jpg" id="boxImage"/></p>
+    <button id="backToWelcome">zurück</button>
+</div>
+
+
+<div id="game">
+	<div id="titlebar">
+		<span id="leben"></span>
+		<span id="level"></span>
+		<span id="user"></span>
+	</div>
+	<div id="RGBA-overlay">
+		<div id="message_diag">
+			<p id="message_text"></p>
+			<p>Klicken zum Weiterspielen</p>
+		</div>
+	</div>
+	
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/threejs/r84/three.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/gpu_particle.js"></script>
+<script src="js/player.js"></script>
+<script src="js/box.js"></script>
+<script src="js/collada.js"></script>
+<script src="js/assets.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
